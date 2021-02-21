@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+form {
+    color: white;
+    /* background-color: black; */
+    background-color: #212529;
+    margin: 0 auto; 
+    width:350px;
+    border-radius: 5px;
+    padding: 3% 2%;  
+    align-items: center;
+    margin-top: 3%;
+    
+}
+.btn {
+    
+    margin:0 auto;
+    margin-top: 7%;
+}

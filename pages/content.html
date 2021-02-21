@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a id="logout" class="btn btn-primary" role="button">Logout</a> -->
+    <a type="button" class="btn btn-primary" id="logout" >Logout</a>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+    <script>
+        
+        var firebaseConfig = {
+          apiKey: "AIzaSyBsDrmHpt1qAHUip_7RKUItvHKPoItj3m0",
+          authDomain: "video-searching-websi.firebaseapp.com",
+          projectId: "video-searching-websi",
+          storageBucket: "video-searching-websi.appspot.com",
+          messagingSenderId: "333564905645",
+          appId: "1:333564905645:web:b68d20c48c23cea7729e24",
+          measurementId: "G-F957BHWW5Y"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+        const auth = firebase.auth();
+        const db=firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+        
+    </script>
+    <script src="../js/logout.js"></script>  
+</body>
+</html>
